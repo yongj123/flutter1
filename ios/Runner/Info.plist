@@ -45,6 +45,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>我们需要您的相册访问权限来查找和清理相似的照片。</string>
 <key>LSApplicationQueriesSchemes</key>
     <array>
         <string>msauthv2</string>

@@ -6,10 +6,14 @@ PODS:
   - msal_flutter (1.0.2):
     - Flutter
     - MSAL (~> 1.2.0)
+  - photo_manager (3.7.1):
+    - Flutter
+    - FlutterMacOS
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - msal_flutter (from `.symlinks/plugins/msal_flutter/ios`)
+  - photo_manager (from `.symlinks/plugins/photo_manager/ios`)
 
 SPEC REPOS:
   trunk:
@@ -20,12 +24,15 @@ EXTERNAL SOURCES:
     :path: Flutter
   msal_flutter:
     :path: ".symlinks/plugins/msal_flutter/ios"
+  photo_manager:
+    :path: ".symlinks/plugins/photo_manager/ios"
 
 SPEC CHECKSUMS:
   Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
   MSAL: 5149daaa19228c2c27d81987634da15b50981cef
   msal_flutter: c2d87b15d5176b31f495fb7ae632c56299dbdc96
+  photo_manager: 1d80ae07a89a67dfbcae95953a1e5a24af7c3e62
 
-PODFILE CHECKSUM: 3c63482e143d1b91d2d2560aee9fb04ecc74ac7e
+PODFILE CHECKSUM: 53a6aebc29ccee84c41f92f409fc20cd4ca011f1
 
 COCOAPODS: 1.16.2

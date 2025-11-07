@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   msal_flutter: ^2.0.1
   http: ^1.5.0
+  photo_manager: ^3.7.1
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:
