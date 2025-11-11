@@ -62,6 +62,14 @@
                 <string>msauth.com.example.iosAiCleaner</string>
             </array>
         </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.882147439216-jggb6lt25lhfea1lci9e0h6qgnadda4j</string>
+            </array>
+        </dict>
     </array>
 </dict>
 </plist>

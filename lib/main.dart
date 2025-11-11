@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'src/services/auth_service.dart';
-import 'src/mail_cleaner/mail_home_page.dart';
+import 'package:flutter1/src/mail_cleaner/mail_provider_selection_page.dart';
 import 'src/photo_cleaner/similar_photos_page.dart';
 
 void main() {
@@ -30,35 +29,22 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
-  final AuthService _authService = AuthService();
-
   @override
   void initState() {
     super.initState();
-    _authService.init();
-  }
-
-  Future<void> _login() async {
-    final accessToken = await _authService.acquireToken();
-    if (accessToken != null) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => HomePage(accessToken: accessToken),
-        ),
-      );
-    } else {
-      // Handle login failure
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Login failed')),
-      );
-    }
   }
 
   void _navigateToPhotoCleaner() {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const SimilarPhotosPage()),
+    );
+  }
+
+  void _navigateToMailCleaner() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const MailProviderSelectionPage()),
     );
   }
 
@@ -73,8 +59,8 @@ class _WelcomePageState extends State<WelcomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: _login,
-              child: const Text('登录 Outlook 清理邮件'),
+              onPressed: _navigateToMailCleaner,
+              child: const Text('邮件清理'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
